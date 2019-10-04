@@ -1,0 +1,43 @@
+/* pages/user/user.wxss */
+
+page {
+   height: 100%;
+}
+
+.wrap {
+  width: 90%;
+  height: 93%;
+  margin: 0 auto;
+  border: solid 10rpx #fccb00;
+  /* margin-top: 30rpx; */
+}
+
+.content {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 26rpx;
+  margin-top: 70rpx;
+}
+
+.wrap .tit {
+  display: block;
+}
+
+.wrap text {
+  margin-top: 15rpx;
+  word-spacing: 10rpx;
+  padding: 10rpx 10rp 10rpx 10rpx;
+}
+
+.wrap .letter {
+  display: flex;
+}
+
+.wrap image {
+  width: 230rpx;
+  height: 110rpx;
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+}

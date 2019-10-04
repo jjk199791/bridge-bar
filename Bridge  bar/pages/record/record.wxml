@@ -1,0 +1,32 @@
+<!--pages/recommend/recommend.wxml-->
+<view class="wrapper">
+  <view class="tabbar">
+    <text class="{{selected?'active':'default'}}" bindtap="selected">观看记录</text>
+    <text class="{{selected1?'active':'default'}}" bindtap="selected1">收藏课程</text>
+    <text class="{{selected2?'active':'default'}}" bindtap="selected2">已购课程</text>
+  </view>
+
+  <view class="content">
+    <view class="{{selected?'show':'hidden'}}">
+      <view class="tabbar2">
+        <text class="{{lesson1?'orange':''}}" bindtap="lesson1">
+         录播课
+        </text>
+        <text class="{{lesson2?'orange':''}}" bindtap="lesson2">
+           绘本
+        </text>
+      </view>
+      <view class=" lessonCon ">
+        <view class="lessonVideo {{lesson1?'show':'hidden'}} ">
+          都是录播课
+        </view>
+        <!-- 绘本 -->
+        <view class="bookVideo {{lesson1?'show':'hidden'}} ">
+
+        </view>
+      </view>
+    </view>
+    <view class=" {{selected1? 'show': 'hidden'}} ">收藏课程页面</view>
+    <view class="{{selected2? 'show': 'hidden'}} ">已购课程页面</view>
+  </view>
+</view>

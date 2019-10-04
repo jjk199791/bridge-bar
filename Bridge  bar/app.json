@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/key/key",
+    "pages/lessonInfo/lessonInfo",
+    "pages/lessonPwd/lessonPwd",
+    "pages/user/user",
+    "pages/BookMain/BookMain",
+    "pages/lessonMain/lessonMain",
+    "pages/login/login",
+    "pages/bridge/bridge",
+    "pages/looklesson/looklesson",
+    "pages/mine/mine",
+    "pages/readBook/readBook",
+    "pages/record/record",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#404040",
+    "selectedColor": "#f6b503",
+    "font-size": "30rpx",
+    "list": [
+      {
+        "pagePath": "pages/bridge/bridge",
+        "iconPath": "/logo/homepage.png",
+        "selectedIconPath": "/logo/homepage2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录",
+        "iconPath": "/logo/record.png",
+        "selectedIconPath": "/logo/record2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/logo/mine.png",
+        "selectedIconPath": "/logo/mine2.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

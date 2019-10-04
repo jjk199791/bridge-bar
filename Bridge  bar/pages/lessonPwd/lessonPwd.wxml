@@ -1,0 +1,35 @@
+<!--pages/lessonPwd/lessonPwd.wxml-->
+<view class="wrap">
+  <view class="logoCon">
+    <image class="logo" src="/logo/iqbar2.png"></image>
+  </view>
+  <view class="study">
+    <text>Create</text>
+    <text>Account</text>
+  </view>
+  <view class="formCon">
+    <form bindsubmit="formBindsubmit" bindreset="formReset">
+      <view style="display:flex;">
+        <input name="userName" placeholder="注册手机号" />
+      </view>
+      <view style="display:flex;">
+        <input name="psw" placeholder="密码" password="true" />
+      </view>
+      <view style="display:flex;" class="get">
+        <input name="code" placeholder="验证码" />
+        <text class="getCode">获取验证码</text>
+      </view>
+      <view style="display:flex;">
+        <input name="psw" placeholder="推荐人手机号（选填）" />
+      </view>
+    </form>
+  </view>
+<view class="login">
+<image src="/logo/right3.png"></image>
+</view>
+
+  <view class="Login">
+      <text bindtap="register">登录</text>
+      <text>忘记密码</text>
+    </view>
+</view>

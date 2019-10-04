@@ -1,0 +1,23 @@
+<!--pages/key/key.wxml-->
+<view class="wrap">
+  <view class="top"></view>
+  <view class="con">
+    <view class="content">
+      <form bindsubmit="formBindsubmit" bindreset="formReset">
+        <text class="tit">课程密码</text>
+        <view style="display:flex;">
+          <input name="password" placeholder="输入密码" class="password" />
+        </view>
+        <text class="warn">提示：点击一下二维码，添加小桥君微信获取密码</text>
+        <text class="getPwd" bindtap="back">获取课程密码</text>
+        <button class="confirm" bindtap="showModal">确认</button>
+        <view>
+          <modal title="温馨提示" class="tip" hidden="{{modalHidden}}" confirm-text="知道了" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">进入客服消息后，发送“*”获取课程密码链接</modal>
+        </view>
+      </form>
+      <text class="bridge" bindtap="back">返回首页</text>
+
+    </view>
+  </view>
+
+</view>

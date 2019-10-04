@@ -1,0 +1,101 @@
+.wrapper {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.active {
+  color: #f6b503;
+}
+
+.orange {
+  color: #f6b503;
+  border-bottom: solid 5rpx #f6b503;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabbar {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  border: solid 3rpx #ccc;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-radius: 15rpx;
+}
+
+.tabbar text {
+  width: 33%;
+  text-align: center;
+}
+
+.tabbar text:nth-child(1) {
+  border-right: solid 2rpx #ccc;
+}
+
+.tabbar text:nth-child(2) {
+  border-right: solid 2rpx #ccc;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+}
+
+.tabbar2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.tabbar2 text {
+  width: 50%;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.lessonCon {
+  width: 100%;
+  height:auto;
+}
+
+.bookVideo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  font-size: 30rpx;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+}
+.bookVideo view {
+  width: 45%;
+  height: 250rpx;
+  border: solid 2rpx #ccc;
+  margin-top: 25rpx;
+  position: relative;
+}
+
+.bookVideo view .pro {
+  font-size: 26rpx;
+  width: 28%;
+  height: 19%;
+  background: #525ca7;
+  position: absolute;
+  top: 0;
+  right: 10rpx;
+  color: white;
+  margin-left: 30rpx;
+}
+

@@ -1,0 +1,17 @@
+<!--pages/looklesson/looklesson.wxml-->
+<view class="wrap">
+  <view class="topic">
+    <view class="activeCon">
+      <view class="activeE" wx:for-index="id" data-id="{{id}}" bindtap="lessonMain">
+        <image src="{{albumList.imgUrl}}"></image>
+        <text class="weight">{{albumList.name}}</text>
+        <text class="ccc">{{albumList.englishName}}</text>
+      </view>
+      <view class="load">点击加载更多</view>
+      <view class="none">
+        <view>更多内容 敬请期待</view>
+        <image src="/logo/none.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

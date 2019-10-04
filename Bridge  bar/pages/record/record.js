@@ -1,0 +1,103 @@
+// pages/recommend/recommend.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    selected: true,
+    selected1: false,
+    selected2: false
+  },
+  selected() {
+    this.setData({
+      selected1: false,
+      selected2: false,
+      selected: true
+    })
+  },
+  selected1() {
+    this.setData({
+      selected: false,
+      selected2: false,
+      selected1: true,
+      lesson1:true,
+      lesson2:false
+    })
+  },
+  selected2() {
+    this.setData({
+      selected: false,
+      selected1: false,
+      selected2: true
+    })
+  },
+  lesson1() {
+    this.setData({
+      lesson2: false,
+      lesson1: true
+    })
+  },
+  lesson2() {
+    this.setData({
+      lesson1: false,
+      lesson2: true
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function(options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function() {
+
+  }
+})

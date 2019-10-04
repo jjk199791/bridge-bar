@@ -1,0 +1,30 @@
+<!--pages/login/login.wxml-->
+<view class="wrap">
+  <image src="/logo/bridge.png" class="logo"></image>
+  <view class="formCon">
+    <form bindsubmit="formBindsubmit" bindreset="formReset">
+
+      <view style="display:flex;">
+        <input name="userName" placeholder="注册手机号" />
+      </view>
+      <view style="display:flex;">
+        <input name="psw" placeholder="密码" password="true" />
+      </view>
+
+    </form>
+    <view class="right2">
+      <image src="/logo/right2.png"></image>
+    </view>
+    <view class="Login">
+      <text bindtap="register">注册</text>
+      <text>忘记密码</text>
+    </view>
+    <view class="cheapPro">
+      <text class="pro">未注册账号的学院.</text>
+      <view class="cheap">注册免费领取价值
+        <text>698</text>元试听大礼包！
+      </view>
+    </view>
+  </view>
+
+</view>

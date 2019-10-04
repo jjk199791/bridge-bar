@@ -1,0 +1,41 @@
+<view class="wrapper">
+  <view wx:for="{{moduleArray}}" wx:for-item="module">
+    <!-- banner -->
+    <swiper wx:if="{{module.moduleType==3}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="banner">
+      <block wx:if="{{module.banner!=null}}" wx:for="{{module.banner.bannerInfo}}" wx:for-item="bannerInfo">
+        <swiper-item>
+          <image src="{{bannerInfo.imgUrl}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 课程类型 -->
+    <view wx:elif="{{module.moduleType==1}}" class="type">
+      <view wx:for="{{module.productVoList}}" wx:for-item="topic" bindtap="look" wx:for-index="id" data-id="{{id}}">
+        <view class="typeImg">
+          <image src="{{topic.imgUrl}}"></image>
+        </view>
+        <text>{{topic.name}}</text>
+      </view>
+    </view>
+    <!-- 推荐专辑 -->
+    <view wx:elif="{{module.moduleType==2}}" class="recommend">
+      <text class="recomPro">{{module.name}}</text>
+      <view class="recomCon">
+        <view wx:for="{{module.productVoList}}" wx:for-item="album" bindtap="albumMain" wx:for-index="productId" data-id="{{productId}}">
+          <image class="recomImg" src="{{album.imgUrl}}"></image>
+          <text>{{album.name}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 专题活动 -->
+    <view wx:elif="{{module.moduleType==4}}" class="topic">
+      <text class="albumPro">{{module.name}}</text>
+      <view class="activeE" wx:for="{{module.productVoList}}" wx:for-item="active" wx:for-index="id" data-id="{{id}}" bindtap="lessonMain">
+        <image src="{{active.imgUrl}}"></image>
+        <text class="weight">{{active.name}}</text>
+        <text class="ccc">{{active.name}}</text>
+      </view>
+      <view class="more">点击加载更多</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/mine/mine.wxml-->
+<view class="wrapper">
+  <view class="logo"></view>
+  <view class="content">
+    <!-- 顶部 -->
+    <view class="top">
+
+    </view>
+    <view class="list">
+      <view class="con">
+        <view>
+          <image src="/logo/lesson.png"></image>
+          <text>我的课程</text>
+        </view>
+      </view>
+      <view class="con">
+        <image src="/logo/heart.png"></image>
+        <text>我的收藏</text>
+      </view>
+      <view class="con">
+        <image src="/logo/buy.png"></image>
+        <text>购买记录</text>
+      </view>
+      <view class="con">
+        <image src="/logo/cheap.png"></image>
+        <text>优惠券</text>
+      </view>
+      <view class="con">
+        <image src="/logo/chat.png"></image>
+        <text>联系客服</text>
+      </view>
+      <view class="con">
+        <image src="/logo/user.png"></image>
+        <text bindtap="user">用户协议</text>
+      </view>
+      <view class="con">
+        <image src="/logo/change.png"></image>
+        <text>切换账号</text>
+      </view>
+
+    </view>
+  </view>
+</view>

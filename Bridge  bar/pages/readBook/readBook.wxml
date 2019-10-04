@@ -1,0 +1,36 @@
+<!--pages/readBook/readBook.wxml-->
+<view class="wrap">
+  <view class="top">
+    <input placeholder="专辑、绘本、期数"></input>
+    <image src="/logo/search.png" class="search"></image>
+    <image src='/logo/cute.png'></image>
+  </view>
+  <view class="recomCon">
+    <view bindtap="readBookMain">
+      <image class="recomImg" src="/images/Irene.jpg"></image>
+      <text>绘本专辑名字九个字</text>
+      <text>概括绘本专辑内容是一个字</text>
+    </view>
+    <view>
+      <image class="recomImg" src="/images/Irene.jpg"></image>
+      <text>绘本专辑名字九个字</text>
+      <text>概括绘本专辑内容是一个字</text>
+    </view>
+    <view>
+      <image class="recomImg" src="/images/Irene.jpg"></image>
+      <text>绘本专辑名字九个字</text>
+      <text>概括绘本专辑内容是一个字</text>
+    </view>
+    <view>
+      <image class="recomImg" src="/images/Irene.jpg"></image>
+      <text>绘本专辑名字九个字</text>
+      <text>概括绘本专辑内容是一个字</text>
+    </view>
+  </view>
+</view>
+<view class="load">点击加载更多
+  <view class="none">
+    <view>更多内容 敬请期待</view>
+    <image src="/logo/none.png"></image>
+  </view>
+</view>

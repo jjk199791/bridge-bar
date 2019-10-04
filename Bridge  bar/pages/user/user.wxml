@@ -1,0 +1,12 @@
+<view class="wrap">
+  <view class="content">
+    <text class="tit">Dear consumer,</text>
+    <text class="letter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+ </text>
+    <image src="/logo/iqbar.png"></image>
+  </view>
+  <!-- <button type="primary" bindtap="listenerButton">显示loading</button>
+  <!--默认隐藏-->
+  <!-- <loading hidden="{{hiddenLoading}}">正在加载</loading>  -->
+</view>

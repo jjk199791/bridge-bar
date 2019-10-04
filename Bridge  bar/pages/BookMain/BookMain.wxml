@@ -1,0 +1,95 @@
+<!--pages/BookMain/BookMain.wxml-->
+<view class="wrap">
+  <!-- 课程简介 -->
+  <view class="activeE">
+    <image src="/images/Irene2.jpg"></image>
+    <text class="activePro">150期/更新</text>
+  </view>
+  <!-- 专辑简单介绍 -->
+  <view class="alnumPro">
+    <view class="pro">
+      <text>专辑1： 名称最多二十四个子</text>
+      <text class="more">概括专辑内容分最多二十五个字</text>
+    </view>
+    <view class="number">共150期</view>
+  </view>
+  <!-- 课程介绍和大纲 -->
+  <view class="headbar">
+    <text class="{{selected1?'active':'default'}}" bindtap="selected1">课程介绍</text>
+    <text class="{{selected2?'active':'default'}}" bindtap="selected2">课程大纲</text>
+  </view>
+  <view class="{{selected1?'show':'hidden'}}" bindtap="selected1">
+    <view class="content">111</view>
+  </view>
+  <!-- 课程大纲 -->
+  <view class="{{selected2?'show':'hidden'}}" bindtap="selected2">
+    <view class="lessonPageList">
+      <view class="eve">
+        <view class="tv">
+          <image src="/logo/tv.jpg"></image>
+          <view class="trySee">点击试看</view>
+        </view>
+        <view class="info">
+          <text>第一期：名字新汉堡包</text>
+          <text>大体概述第一期内容  议案夯实三个字</text>
+          <view class="seeNum">
+            <image src="/logo/people.png"></image>
+            <text class="num">观看人数：</text>
+            <text>2200万人</text>
+          </view>
+        </view>
+      </view>
+      <view class="eve">
+        <view class="tv">
+          <image src="/logo/tv.jpg"></image>
+          <view class="trySee">点击试看</view>
+        </view>
+        <view class="info">
+          <text>第一期：名字新汉堡包</text>
+          <text>大体概述第一期内容  议案夯实三个字</text>
+          <view class="seeNum">
+            <image src="/logo/people.png"></image>
+            <text class="num">观看人数：</text>
+            <text>2200万人</text>
+          </view>
+        </view>
+      </view>
+      <view class="eve">
+        <view class="tv">
+          <image src="/logo/tv.jpg"></image>
+          <view class="trySee">点击试看</view>
+        </view>
+        <view class="info">
+          <text>第一期：名字新汉堡包</text>
+          <text>大体概述第一期内容  议案夯实三个字</text>
+          <view class="seeNum">
+            <image src="/logo/people.png"></image>
+            <text class="num">观看人数：</text>
+            <text>2200万人</text>
+          </view>
+        </view>
+      </view>
+      <view class="load">点击加载更多</view>
+      <view class="none">
+        <view>更多内容 敬请期待</view>
+        <image src="/logo/none.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部导航 -->
+  <view class="tabbar">
+    <view class="serve">
+      <view>
+        <image src="/logo/serve.png"></image>
+        <text>联系客服</text>
+      </view>
+    </view>
+    <view class="get">
+      <view>
+        <image src="/logo/get.png"></image>
+        <text>获取课程授权</text>
+      </view>
+    </view>
+  </view>
+</view>
